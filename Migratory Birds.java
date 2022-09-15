@@ -28,10 +28,14 @@ class Result {
         for (int ele : arr )
         {
             freq[ele]++;
-            if (freq[ele] > maxFreq)
+        }
+        
+        for (int i = 1 ; i < 6 ; i++)
+        {
+            if (freq[i] > maxFreq)
             {
-                maxFreq = freq[ele];
-                birdId = ele;
+                maxFreq = freq[i];
+                birdId = i;
             }
         }
         
